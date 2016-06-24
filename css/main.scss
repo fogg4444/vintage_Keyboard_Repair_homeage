@@ -169,6 +169,11 @@ ul {
  content: "\0BB \020";
 }
 
+.site-footer {
+  padding-top: 1em;
+  text-align: center;
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "forsale";
 
