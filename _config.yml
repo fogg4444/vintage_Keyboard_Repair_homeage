@@ -29,7 +29,7 @@ prose:
   rooturl: '_posts'
   siteurl: 'https://fogg4444.github.io/mattCunitzGithubPages/'
   relativeLinks: 'https://fogg4444.github.io/mattCunitzGithubPages/links.jsonp'
-  media: 'assets/images/'
+  media: 'assets/images'
   
   metadata:
     _posts/forsale:
