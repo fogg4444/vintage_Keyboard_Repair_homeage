@@ -102,6 +102,7 @@ pre {
 
 a {
   color: black;
+  text-decoration: underline;
 }
 
 a:hover {
@@ -116,47 +117,26 @@ a:hover {
   padding-top: .8em;
 }
 
+$pyramid-list-size: 210%;
+
 .main-list-line-1 {
-  font-size: 190%;
+  font-size: $pyramid-list-size * 1;
 }
 .main-list-line-2 {
-  font-size: 180%;
+  font-size: $pyramid-list-size * .95;
 }
 .main-list-line-3 {
-  font-size: 170%;
+  font-size: $pyramid-list-size * .9;
 }
 .main-list-line-4 {
-  font-size: 160%;
+  font-size: $pyramid-list-size * .85;
 }
 .main-list-line-5 {
-  font-size: 150%;
+  font-size: $pyramid-list-size * .8;
 }
 .main-list-line-6 {
-  font-size: 140%;
+  font-size: $pyramid-list-size * .75;
 }
-
-
-
-/* Small devices (tablets, 768px and up) */
-/*@media (min-width: 768px) {
-    .text-justify-sm {
-        text-align: center;
-    }
-}*/
-
-/* Medium devices (desktops, 992px and up) */
-/*@media (min-width: 992px) {
-    .text-justify-md {
-        text-align: center;
-    }
-}*/
-
-/* Large devices (large desktops, 1200px and up) */
-/*@media (min-width: 1200px) {
-    .text-justify-lg {
-        text-align: center;
-    }
-}*/
 
 hr {
   border: 0;
@@ -164,38 +144,6 @@ hr {
   margin-top: 0;
   margin-bottom: 1em;
 }
-
-/*h3 {
-  padding: .3em;
-}*/
-
-/*.mainList {
-  padding: 1.5em;
-
-}*/
-
-/*full size*/
-/*@media (min-width: 500px) {
-  .title {
-    text-align: center;
-  }
-  .container {
-    border: 6px solid red;
-    width: 600px;
-  }
-}*/
-
-/*mobile settings*/
-/*@media (max-width: 500px) {
-  .title {
-    text-align: left;
-  }
-  .container {
-    border: 6px solid red;
-    width: 98%;
-  }
-}
-*/
 
 ul {
    list-style: none;
