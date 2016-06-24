@@ -34,7 +34,25 @@ layout: default
       <hr>
       <h1>For sale</h1>
       {% for item in site.posts %}
-          <h2><a href="{{item.url | prepend:site.baseurl | prepend:site.url }}">{{ item.title }}</a></h2>
+        <a class="forsalefrontpage" href="{{item.url | prepend:site.baseurl | prepend:site.url }}">
+          <h2>{{ item.title }}</h2>
+
+          {% assign foundImage = 0 %}
+          {% assign images = item.content | split:"<img " %}
+          {% for image in images %}
+            {% if image contains 'src' %}
+
+                {% if foundImage == 0 %}
+                    {% assign html = image | split:"/>" | first %}
+                    <img {{ html }} />
+                    {% assign foundImage = 1 %}
+                {% endif %}
+            {% endif %}
+          {% endfor %}
+
+          <!-- <a href="{{ item.url }}">{{ item.title }}</a> -->
+        </a>
+
       {% endfor %}
     </div>
   </div>

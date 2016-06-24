@@ -102,11 +102,21 @@ pre {
 
 a {
   color: black;
-  text-decoration: underline;
 }
 
 a:hover {
-  color: red;
+  text-decoration: underline;
+  color: black;
+}
+
+a img {
+  outline:1px solid black;
+  outline-offset:-1px;
+}
+
+a:hover img {
+  outline:3px solid black;
+  outline-offset:-3px;
 }
 
 .padding-bottom {
