@@ -2,19 +2,47 @@
 layout: default
 ---
 
-<div class="home">
+  <div class="page-header">
+    <h1 class="text-center">Vintage Keyboard Repair</h1>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 text-center">
+      <h2 class="padding-bottom">Specializing in the Complete Repair &amp; Restoration of: </h2>
 
-
-  <h1 class="page-heading">Vintage keasdfybaord repair</h1>
+      <p class="main-list-line-1">Rhodes, Wurlitzer Electric Pianos</p>
+      
+      <p class="main-list-line-2">Hohner Clavinet , Pianet Cembalet</p>
+      
+      <p class="main-list-line-3">Vox Farfisa, and other portable combo-organs</p>
+      
+      <p class="main-list-line-4">Baldwin Electric harpsichords, Vako Orchestron, Mellotrons</p>
+      
+      <p class="main-list-line-5">Early portable synths + string ensembles</p>
+      
+      <p class="main-list-line-6">Most other pre-1980’s keyboards</p>
+      
+      <h3 class="padding-bottom padding-top">Serving the San Francisco Bay Area since 1995!</h3>
+      
+      <h3>For an appointment, contact:</p>
+      
+      <h2>Matt Cunitz</h2>
+      <h3>
+        <a href="tel:+15105272067"> 510-527-2067</a>
+      </h3>
+    
+    </div>
+    
+  </div>
+    <hr>
   
-  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+      <h2 class="text-center">For Sale</h2>
+      {% for item in site.posts %}
+          <h2>
+            {{ item.title }}
+          </h2>
+      {% endfor %}
+    </div>
+  </div>
 
-
-    {% for item in site.posts %}
-        <h2>
-          {{ item.title }}
-        </h2>
-    {% endfor %}
-
-
-</div>

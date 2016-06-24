@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-_site
 .sass-cache
 .jekyll-metadata
-=======
 _site/*
 .DS_Store
->>>>>>> 11d5976863ff9ef1c9fd5cadd88af3ad4b1f6c45
+bower_components
