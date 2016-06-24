@@ -25,7 +25,6 @@ $container-color: #FF9500;
 // $grey-color-dark:  darken($grey-color, 25%);
 
 
-// Import partials from `sass_dir` (defaults to `_sass`)
 
 
 * {
@@ -211,4 +210,7 @@ ul {
 .mainList li:before {
  content: "\0BB \020";
 }
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "forsale";
 
