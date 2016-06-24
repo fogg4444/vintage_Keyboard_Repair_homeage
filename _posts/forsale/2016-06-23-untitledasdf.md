@@ -1,7 +1,7 @@
 ---
 categories: forsale
 layout: forsale
-published: false
+published: true
 title: Untitledasdf
 ---
 ## A New Post
