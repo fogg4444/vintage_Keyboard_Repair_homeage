@@ -34,7 +34,7 @@ layout: default
       <hr>
       <h1>For sale</h1>
       {% for item in site.posts %}
-          <h2><a href="{{item.url | prepend:site.baseurl}}">{{ item.title }}</a></h2>
+          <h2><a href="{{item.url | prepend:site.baseurl | prepend:site.url }}">{{ item.title }}</a></h2>
       {% endfor %}
     </div>
   </div>
