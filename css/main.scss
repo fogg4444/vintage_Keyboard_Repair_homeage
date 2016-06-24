@@ -34,12 +34,23 @@ $container-color: #FF9500;
   box-sizing: border-box;
   color: #000000;
 }
+
 .page-header {
   border-bottom: dotted 1px #000000;
 }
 
-.background-color {
+.content-wrapper {
   background-color: $background-color;
+  // height:100vh;
+}
+
+.container {
+  border: 1px dotted black;
+  margin: 0 auto;
+  padding: 1em;
+  background-color: $container-color;
+  // height:100vh;
+
 }
 
 h1 {
@@ -201,9 +212,3 @@ ul {
  content: "\0BB \020";
 }
 
-.container {
-  border: 1px dotted black;
-  margin: 0 auto;
-  padding: 1em;
-  background-color: $container-color;
-}

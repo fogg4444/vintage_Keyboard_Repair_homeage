@@ -2,11 +2,13 @@
 layout: default
 ---
 
-  <div class="page-header">
-    <h1 class="text-center">Vintage Keyboard Repair</h1>
-  </div>
   <div class="row">
     <div class="col-xs-12 text-center">
+
+      <div class="page-header">
+        <h1 class="text-center">Vintage Keyboard Repair</h1>
+      </div>
+
       <h2 class="padding-bottom">Specializing in the Complete Repair &amp; Restoration of: </h2>
 
       <p class="main-list-line-1">Rhodes, Wurlitzer Electric Pianos</p>
@@ -29,20 +31,13 @@ layout: default
       <h3>
         <a href="tel:+15105272067"> 510-527-2067</a>
       </h3>
-    
-    </div>
-    
-  </div>
-    <hr>
-  
-  <div class="row">
-    <div class="col-xs-12">
-      <h2 class="text-center">For Sale</h2>
+      <hr>
+      <h1>For sale</h1>
       {% for item in site.posts %}
-          <h2>
-            {{ item.title }}
-          </h2>
+          <h2><a href="{{item.url | prepend:site.baseurl}}">{{ item.title }}</a></h2>
       {% endfor %}
     </div>
   </div>
+  
+  
 
