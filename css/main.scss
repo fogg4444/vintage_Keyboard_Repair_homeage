@@ -132,7 +132,11 @@ a img {
   padding-top: .8em;
 }
 
-$pyramid-list-size: 210%;
+.second-line {
+  font-style: italic;
+}
+
+$pyramid-list-size: 220%;
 
 .main-list-line-1 {
   font-size: $pyramid-list-size * 1;

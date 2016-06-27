@@ -10,7 +10,7 @@ title: Vintage Keyboard Repair
 phone-number: 510-527-2067
 description: > # this means to ignore newlines until "baseurl:"
   Vintage Keyboard Repair
-baseurl: "/mattCunitzGithubPages" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 # url: "http://localhost:4000" # the base hostname & protocol for your site
 url: "https://fogg4444.github.io" # the base hostname & protocol for your site
 
