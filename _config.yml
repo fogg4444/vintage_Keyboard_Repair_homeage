@@ -48,3 +48,5 @@ prose:
           element: "text"
           label: "Title"
           value: ""
+      - name: "published"
+        value: true
