@@ -1,0 +1,7 @@
+---
+categories: forsale
+layout: forsale
+title: ''
+published: false
+---
+This file does not appear on the website but it needs to be in here. Don't delete it. This is a placeholder. This folder will automatically delete if nothing is stored inside.
