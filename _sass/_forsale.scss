@@ -12,3 +12,31 @@ h1.forsale {
 .nothing-for-sale {
   text-align: center;
 }
+
+h2 {
+  text-align: center;
+}
+
+.for-sale-front-page-item {
+
+  border: 1px dotted black;
+  padding: 1em;
+  padding-bottom: 2em;
+
+  h2 {
+    &:hover {
+      text-decoration: underline;
+    }
+    &:active {
+      color: red;
+    }
+  }
+  a {
+    text-align: center;
+    line-height: 4.5em;
+    text-decoration: none;
+  }
+  img {
+    width: 70%;
+  }
+}

@@ -4,7 +4,6 @@
 @charset "utf-8";
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import "forsale";
 @import "include-media";
 
 // Our variables
@@ -268,4 +267,6 @@ ul {
 .mainList li:before {
  content: "\0BB \020";
 }
+
+@import "forsale";
 
