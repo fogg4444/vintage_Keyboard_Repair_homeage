@@ -1,7 +1,7 @@
 ---
 categories: forsale
 layout: forsale
-published: false
+published: true
 title: TEST KEYBOARD 1
 ---
 ## A New Post
