@@ -3,29 +3,21 @@
 ---
 @charset "utf-8";
 
-
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "forsale";
+@import "include-media";
 
 // Our variables
-  $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-// $base-font-size:   16px;
-// $base-font-weight: 400;
-// $small-font-size:  $base-font-size * 0.875;
-// $base-line-height: 1.5;
-
-// $spacing-unit:     30px;
-
-// $text-color:       #111;
 $background-color: #E86600;
 $container-color: #FF9500;
-// $brand-color:      #2a7ae2;
 
-// $grey-color:       #828282;
-// $grey-color-light: lighten($grey-color, 40%);
-// $grey-color-dark:  darken($grey-color, 25%);
+$footer-height-mobile: 10em;
+$footer-height-tablet: 5em;
+$footer-height-desktop: 5em;
 
-
-
+$red: #ff0000;
 
 * {
   margin: 0;
@@ -34,21 +26,98 @@ $container-color: #FF9500;
   color: #000000;
 }
 
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;  
+}
+
+html, body {
+  margin:0;
+  padding:0;
+  height:100%;
+  background-color: $background-color;
+  line-height: 3em;
+}
+
+
+.container {
+
+  // border: 1px dotted black;
+  margin: 0 auto;
+  // padding: 1em;
+  background-color: $container-color;
+  min-height:100%;
+  position:relative;
+  @include media(">tablet") {
+      width: 768px;
+  }
+  @include media("<=tablet") {
+    width: 100%;
+  }
+}
+.site-header {
+  background-color: $container-color;
+  padding:10px;
+  text-align: center;
+}
+.body {
+   padding: 1em;
+   @include media(">tablet") {
+     padding-bottom: $footer-height-desktop; // Height of the footer
+   }
+   @include media(">500px", "<=tablet") {
+     padding-bottom: $footer-height-tablet; // Height of the footer
+   }
+   @include media("<500px") {
+     padding-bottom: $footer-height-mobile;
+   }
+}
+.site-footer {
+  background-color: $container-color;
+  width:100%;
+  margin: 0 auto;
+  @include media(">tablet") {
+    height: $footer-height-desktop; // Height of the footer
+  }
+  @include media(">500px", "<=tablet") {
+    height: $footer-height-tablet; // Height of the footer
+  }
+  @include media("<500px") {
+    height: $footer-height-mobile;
+  }
+  position:absolute;
+  bottom:0;
+  left: 0;
+  // padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+}
+
+.footer-wrap {
+  margin: 0 auto;
+  border: $red solid 1px;
+}
+
+.footer-div {
+  height: 1em;
+  display:inline-block;
+  @include media("<=500px") {
+    width: 100%;
+    line-height: 1em;
+  }
+}
+
+.footer-dash {
+  @include media("<=500px") {
+    display: none;
+  }
+}
+
 .page-header {
   border-bottom: dotted 1px #000000;
 }
 
-.content-wrapper {
-  background-color: $background-color;
-  // height:100vh;
-}
-
-.container {
-  border: 1px dotted black;
-  margin: 0 auto;
-  padding: 1em;
-  background-color: $container-color;
-}
 
 .nav {
   border: 1px dotted black;
@@ -68,7 +137,7 @@ $container-color: #FF9500;
     color:grey;
   }
   &:active {
-    color: red;
+    color: $red;
   }
 }
 
@@ -78,8 +147,7 @@ $container-color: #FF9500;
   -khtml-user-select: none;    /* Konqueror */
   -moz-user-select: none;      /* Firefox */
   -ms-user-select: none;       /* Internet Explorer/Edge */
-  user-select: none;           /* Non-prefixed version, currently
-                                  not supported by any browser */
+  user-select: none;           /* Non-prefixed version, currently not supported by any browser */
   cursor:default;
 }
 
@@ -89,7 +157,8 @@ h1 {
   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   font-style: normal;
   font-variant: normal;
-  font-weight: 570;
+  font-weight: 500;
+  line-height: 1em;
 }
 
 h2 {
@@ -112,22 +181,9 @@ p {
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
-  /*line-height: 20px;*/
+  line-height: 2em;
 }
-blockquote {
-  font-family: $base-font-family;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  /*line-height: 30px;*/
-}
-pre {
-  font-family: $base-font-family;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  /*line-height: 18.5714px;*/
-}
+
 
 
 
@@ -135,10 +191,10 @@ a {
   color: black;
   &:hover {
     text-decoration: underline;
-    color: black;
+    color: #33334d;
   }
   &:active {
-    color: red;
+    color: #ff0000;
   }
 }
 
@@ -150,7 +206,7 @@ a img {
     outline-offset:-3px;
   }
   &:active {
-    outline:3px solid red;
+    outline:3px solid $red;
     outline-offset:-3px;
   }
 }
@@ -188,6 +244,10 @@ $pyramid-list-size: 220%;
   font-size: $pyramid-list-size * .75;
 }
 
+.home {
+  text-align: center;
+}
+
 hr {
   border: 0;
   border-bottom: 1px dotted black;
@@ -196,10 +256,10 @@ hr {
 }
 
 ul {
-   list-style: none;
-   margin-left: 0;
-   padding-left: 1em;
-   text-indent: -1.2em;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+  text-indent: -1.2em;
 }
 
 .mainList li {
@@ -208,12 +268,4 @@ ul {
 .mainList li:before {
  content: "\0BB \020";
 }
-
-.site-footer {
-  padding-top: 1em;
-  text-align: center;
-}
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import "forsale";
 

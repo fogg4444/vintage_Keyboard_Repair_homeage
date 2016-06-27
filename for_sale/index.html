@@ -2,4 +2,32 @@
 layout: default
 ---
 
-test
+{% if site.posts.size > 0 %}
+  
+  {% for item in site.posts %}
+    <a class="forsalefrontpage" href="{{item.url | prepend:site.baseurl | prepend:site.url }}">
+      <h2>{{ item.title }}</h2>
+
+      {% assign foundImage = 0 %}
+      {% assign images = item.content | split:"<img " %}
+      {% for image in images %}
+        {% if image contains 'src' %}
+
+            {% if foundImage == 0 %}
+                {% assign html = image | split:"/>" | first %}
+                <img {{ html }} />
+                {% assign foundImage = 1 %}
+            {% endif %}
+        {% endif %}
+      {% endfor %}
+
+    </a>
+
+  {% endfor %} 
+
+
+{% else %}
+
+  <h3 class="nothing-for-sale">Nothing for sale at this time</h3>
+
+{% endif %}
