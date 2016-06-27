@@ -48,9 +48,41 @@ $container-color: #FF9500;
   margin: 0 auto;
   padding: 1em;
   background-color: $container-color;
-  // height:100vh;
-
 }
+
+.nav {
+  border: 1px dotted black;
+  width: 100%;
+  margin: 10px auto;
+  position: relative;
+  text-align: center;
+}
+
+.nav-button {
+  // border: 1px solid red;
+  display:inline-block;
+  // margin: .8em;
+  width: 49%;
+  font-size: 1.5em;
+  &:hover {
+    color:grey;
+  }
+  &:active {
+    color: red;
+  }
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+  cursor:default;
+}
+
 
 h1 {
   font-size: 400%;
