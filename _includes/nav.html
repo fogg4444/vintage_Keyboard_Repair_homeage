@@ -1,8 +1,10 @@
-<div class="nav noselect">
-  <div class="nav-button">
-    <a href="/">About</a>
+{% if page.location != "forsale" %}
+  <div class="nav noselect">
+  <!--   <div class="nav-button">
+      <a href="/">About</a>
+    </div> -->
+      <div class="nav-button">
+        <a href="/forsale">Keyboards For Sale</a>
+      </div>
   </div>
-  <div class="nav-button">
-    <a href="/forsale">For Sale</a>
-  </div>
-</div>
+{% endif %}

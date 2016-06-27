@@ -152,16 +152,19 @@ html, body {
 
 
 h1 {
+  a {
+    text-decoration: none;
+  }
   font-size: 400%;
   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   font-style: normal;
   font-variant: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1em;
 }
 
 h2 {
-  font-size: 300%;
+  font-size: 250%;
   font-family: $base-font-family;
   font-style: normal;
   font-variant: normal;
@@ -176,6 +179,7 @@ h3 {
   /*line-height: 15.4px;*/
 }
 p {
+  font-size: 125%;
   font-family: $base-font-family;
   font-style: normal;
   font-variant: normal;
@@ -187,6 +191,7 @@ p {
 
 
 a {
+  text-decoration: none;
   color: black;
   &:hover {
     text-decoration: underline;
@@ -226,21 +231,32 @@ $pyramid-list-size: 220%;
 
 .main-list-line-1 {
   font-size: $pyramid-list-size * 1;
+  font-weight: 200;
 }
 .main-list-line-2 {
   font-size: $pyramid-list-size * .95;
+  font-weight: 200;
+
 }
 .main-list-line-3 {
   font-size: $pyramid-list-size * .9;
+  font-weight: 200;
+
 }
 .main-list-line-4 {
   font-size: $pyramid-list-size * .85;
+  font-weight: 200;
+
 }
 .main-list-line-5 {
-  font-size: $pyramid-list-size * .8;
+  font-size: $pyramid-list-size * .75;
+  font-weight: 200;
+
 }
 .main-list-line-6 {
-  font-size: $pyramid-list-size * .75;
+  font-size: $pyramid-list-size * .6;
+  font-weight: 200;
+
 }
 
 .home {
