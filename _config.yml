@@ -28,7 +28,7 @@ permalink: pretty
 # markdown: rdiscount
 
 prose:
-  rooturl: '/'
+  rooturl: ''
   siteurl: 'https://fogg4444.github.io/mattCunitzGithubPages/'
   relativeLinks: 'https://fogg4444.github.io/mattCunitzGithubPages/links.jsonp'
   media: 'assets/images'
