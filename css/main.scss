@@ -38,6 +38,40 @@ html, body {
   line-height: 3em;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+
+  &:hover {
+    text-decoration: underline;
+    color: #33334d;
+  }
+  &:active {
+    color: #ff0000;
+  }
+  
+}
+
+a img {
+  outline:1px solid black;
+  outline-offset:-1px;
+  &:hover {
+    outline:3px solid black;
+    outline-offset:-3px;
+  }
+  &:active {
+    outline:3px solid $red;
+    outline-offset:-3px;
+  }
+}
+
 
 .container {
 
@@ -73,6 +107,7 @@ html, body {
 }
 .site-footer {
   background-color: $container-color;
+  font-family: $base-font-family;
   width:100%;
   margin: 0 auto;
   @include media(">tablet") {
@@ -114,12 +149,16 @@ html, body {
 }
 
 .page-header {
+  h1 {
+    line-height: 115%;
+  }
+  padding: 1.7em;
   border-bottom: dotted 1px #000000;
 }
 
 
 .nav {
-  border: 1px dotted black;
+  // border: 1px dotted black;
   width: 100%;
   margin: 10px auto;
   position: relative;
@@ -127,17 +166,62 @@ html, body {
 }
 
 .nav-button {
+
   // border: 1px solid red;
   display:inline-block;
   // margin: .8em;
   width: 49%;
   font-size: 1.5em;
   &:hover {
-    color:grey;
+    color: grey;
   }
   &:active {
     color: $red;
   }
+}
+
+.for-sale-button-div {
+  font-family: $base-font-family;
+  border: solid 1px black;
+  border-radius: 2em;
+  font-size: 1.5em;
+
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+
+  &:hover {
+
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
+
+    a {
+      color: $container-color;
+      text-decoration: none;
+    }
+    background-color: black;
+    color: orange;
+  }
+  &:active {
+    -o-transition:.1s;
+    -ms-transition:.1s;
+    -moz-transition:.1s;
+    -webkit-transition:.1s;
+    /* ...and now for the proper property */
+    transition:.1s;
+
+    background-color: red;
+  }
+
+  
+
 }
 
 .noselect {
@@ -172,6 +256,8 @@ h2 {
   /*line-height: 15.4px;*/
 }
 h3 {
+  font-size: 140%;
+
   font-family: $base-font-family;
   font-style: normal;
   font-variant: normal;
@@ -185,34 +271,6 @@ p {
   font-variant: normal;
   font-weight: 400;
   line-height: 2em;
-}
-
-
-
-
-a {
-  text-decoration: none;
-  color: black;
-  &:hover {
-    text-decoration: underline;
-    color: #33334d;
-  }
-  &:active {
-    color: #ff0000;
-  }
-}
-
-a img {
-  outline:1px solid black;
-  outline-offset:-1px;
-  &:hover {
-    outline:3px solid black;
-    outline-offset:-3px;
-  }
-  &:active {
-    outline:3px solid $red;
-    outline-offset:-3px;
-  }
 }
 
 .padding-bottom {
