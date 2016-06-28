@@ -35,7 +35,7 @@ prose:
   media: 'assets/images'
   
   metadata:
-    _posts/forsale:
+    _posts/for_sale:
       - name: "layout"
         field:
           element: "hidden"
