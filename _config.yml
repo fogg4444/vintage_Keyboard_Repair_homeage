@@ -29,8 +29,9 @@ permalink: pretty
 
 prose:
   rooturl: ''
-  siteurl: 'https://fogg4444.github.io/mattCunitzGithubPages/'
-  relativeLinks: 'https://fogg4444.github.io/mattCunitzGithubPages/links.jsonp'
+  ignore: ['_includes', '_layouts', '_sass', '_site', 'about.md', 'assets', 'blog.rss', 'CNAME', 'css', 'favicon.ico', 'feed.xml', 'forsale', 'Gemfile', 'Gemfile.lock', 'index.html', 'LICENCE.md', 'links.jsonp', 'README.md', 'scratch.html', 'site.css', 'site.js']
+  siteurl: 'http://www.vintagekeyboardrepair.com'
+  relativeLinks: 'http://www.vintagekeyboardrepair.com/links.jsonp'
   media: 'assets/images'
   
   metadata:
