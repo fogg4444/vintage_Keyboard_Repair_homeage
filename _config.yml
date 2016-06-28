@@ -29,7 +29,7 @@ permalink: pretty
 
 prose:
   rooturl: ''
-  ignore: ['_includes', '_layouts', '_sass', '_site', 'about.md', 'assets', 'blog.rss', 'CNAME', 'css', 'favicon.ico', 'feed.xml', 'forsale', 'Gemfile', 'Gemfile.lock', 'index.html', 'LICENCE.md', 'links.jsonp', 'README.md', 'scratch.html', 'site.css', 'site.js']
+  ignore: ['_includes', '_layouts', '_sass', '_site', 'about.md', 'assets', 'blog.rss', 'CNAME', 'css', 'favicon.ico', 'feed.xml', 'Gemfile', 'Gemfile.lock', 'index.html', 'LICENCE.md', 'links.jsonp', 'README.md', 'scratch.html', 'site.css', 'site.js', '.gitignore', '.ruby-version', '_config.yml']
   siteurl: 'http://www.vintagekeyboardrepair.com'
   relativeLinks: 'http://www.vintagekeyboardrepair.com/links.jsonp'
   media: 'assets/images'
